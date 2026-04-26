@@ -1,0 +1,119 @@
+.viewer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #000;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+}
+
+.title {
+  position: absolute;
+  top: 12px;
+  left: 24px;
+  z-index: 10;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.canvas {
+  flex: 1;
+  position: relative;
+}
+
+.controls {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.buttonRow {
+  display: flex;
+  gap: 8px;
+  align-items: stretch;
+}
+
+.toggleBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: 2.75rem;
+  border: 1px solid transparent;
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.55);
+  background-color: #1a1a1a;
+  background-image:
+    linear-gradient(-45deg, #1a1a1a, #1a1a1a),
+    linear-gradient(135deg, #2c2c2c, #0b0b0b 50%, #2c2c2c);
+  background-origin: padding-box, border-box;
+  background-clip: padding-box, border-box;
+  box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  cursor: pointer;
+  transition: color 0.25s ease;
+  user-select: none;
+}
+
+.toggleBtn:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.toggleBtn:active {
+  transform: scale(0.97);
+}
+
+.uploadBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: 2.75rem;
+  border: 1px solid transparent;
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.55);
+  background-color: #1a1a1a;
+  background-image:
+    linear-gradient(-45deg, #1a1a1a, #1a1a1a),
+    linear-gradient(135deg, #2c2c2c, #0b0b0b 50%, #2c2c2c);
+  background-origin: padding-box, border-box;
+  background-clip: padding-box, border-box;
+  box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  cursor: pointer;
+  transition: color 0.25s ease;
+  user-select: none;
+}
+
+.uploadBtn:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.uploadBtn:active {
+  transform: scale(0.97);
+}
